@@ -4,13 +4,26 @@ body{
 h1, h2, h3, p {
     color: #775d49
 }
+main {
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.inicio {
+    display: grid;
+    grid-template-columns: 250px 300px 250px;
+    grid-template-rows: repeat(2, 400px);
+}
+
 .logo-nav{
     width: 100px;
     height: auto;
 }
 .logo{
+    display: flex;
     width: 250px;
     height: auto;
+    justify-items: flex-start;
 }
 .nav-bar {
     display: flex;
@@ -41,6 +54,7 @@ h1, h2, h3, p {
     border-radius: 20px;
     cursor: pointer;
 }
-.titulo-inicio{
 
-}
+
+
+
