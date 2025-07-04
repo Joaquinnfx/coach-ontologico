@@ -1,0 +1,46 @@
+body{
+    background-color: #eae3d8;
+}
+h1, h2, h3, p {
+    color: #775d49
+}
+.logo-nav{
+    width: 100px;
+    height: auto;
+}
+.logo{
+    width: 250px;
+    height: auto;
+}
+.nav-bar {
+    display: flex;
+    align-content: center;
+    align-items: center;
+    position: relative;
+    justify-content: center;
+    
+}
+.nav-ul  {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+    gap:15px;
+
+}  
+.nav-link {
+    text-decoration: none;
+    color: #775d49;
+}
+.btn-primary {
+    background-color: #775d49;
+    color: #eae3d8;
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.titulo-inicio{
+
+}
