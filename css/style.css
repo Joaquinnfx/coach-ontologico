@@ -9,15 +9,15 @@ h1, h2, h3, p {
     margin: 0 40px 0 40px;
 }
 
-.inicio {
+#inicio {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(4, 120px);
     grid-template-areas: 
     "logo-inicio titulo-inicio img-inicio"
-     "logo-inicio titulo-inicio img-inicio"
-     "p-inicio p-inicio img-inicio"
-     "p-inicio p-inicio img-inicio"
+    "logo-inicio titulo-inicio img-inicio"
+    "p-inicio p-inicio img-inicio"
+    "p-inicio p-inicio img-inicio"
     ;
 }
 .logo-inicio {
@@ -98,8 +98,44 @@ h1, h2, h3, p {
     cursor: pointer;
     font-weight: bold;
     font-size: 15px;
+    text-decoration: none;
 }
 
+#sobremi {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 150px repeat(2, 200px);
+    grid-template-areas: 
+    "titulo-sobremi p-sobremi p-sobremi"
+    "img-sobremi p-sobremi p-sobremi"
+    "img-sobremi p-sobremi p-sobremi"
+    ;
+}
+.titulo-inicio {
+    grid-area: titulo-inicio;  
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.img-sobremi {
+    grid-area: img-sobremi;  
+    display: flex;
+    justify-content: center;
+    object-fit: cover;
+}
+.p-sobremi {
+    grid-area: p-sobremi; 
+    display: flex;
+    align-items: center;
+    padding: 40px; 
+    justify-content: center;
+    font-size: 25px;
+}
+.imagen-sobremi {
+    width: 80%;
+    height: auto;
+    object-fit: cover;
+}
 
 
 
