@@ -208,6 +208,10 @@ h3{
     padding: 10px;
     margin: 5px;
 }
+.card1:hover{
+    transform: scale(1.05);
+    transition: 0.5s;
+}
 
 .card1:hover {
     transform: scale(1.05);
