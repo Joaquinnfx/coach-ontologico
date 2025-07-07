@@ -9,6 +9,10 @@ h1, h2, h3, p {
 h2{
     font-size: 50px;
 }
+h3{
+    color: #eae3d8;
+    font-size: 30px;
+}
 
 .contenedor {
     max-width: 1300px;
@@ -186,6 +190,31 @@ h2{
 .img-acercade {
     grid-area: img-acercade;
 }
+
+#acerdade2{
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+}
+
+.card1{
+    background-color: #775d49;
+    text-align: center;
+    justify-content: center;
+    width: 500px;
+    height: 350px;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 5px;
+}
+
+.p-acercade2{
+    color: #eae3d8;
+    font-size: 18px;
+    
+}
+
+
 
 
 
