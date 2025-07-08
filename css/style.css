@@ -173,7 +173,6 @@ img{
     "titulo-acercade titulo-acercade titulo-acercade titulo-acercade"
     "p-acercade p-acercade  img-acercade img-acercade"                   
     "p-acercade p-acercade  img-acercade img-acercade"
-    /*". . . ."*/
 }
 
 .titulo-acercade {
@@ -233,87 +232,43 @@ img{
 
 #servicios {
     display: grid;
-    grid-template-columns: repeat(2, 500px);
-    grid-template-rows: 100px 250px 50px repeat(2, 125px);
-    grid-template-areas: 
-    "titulo-servicios titulo-servicios"
-    "img-servicios1 img-servicios2 "
-    "subtitulo1 subtitulo2 "
-    "p-servicios1 p-servicios2 "
-    "btn-descubremas1 btn-descubremas2"
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 200px);
+    grid-area: 
+    "titulo-servicios titulo-servicios titulo-servicios"
+    "card-servicios1 img-servicios card-servicios2"
+    "card-servicios1 img-servicios card-servicios2"
+    "card-servicios1 img-servicios card-servicios2"
     ;
-    justify-content: center;
-    gap: 40px;
-    margin-top: 150px;
 }
 
 .titulo-servicios {
     grid-area: titulo-servicios;  
+}
+
+.card-servicios1 {
+    grid-area: card-servicios1;
+}
+
+.card-servicios2 {
+    grid-area: card-servicios2;
+}
+
+.subtitulo {
+    color: #775d49;
+    font-size: 30px;
     text-align: center;
 }
 
-.img-servicios1 {
-    grid-area: img-servicios1;
-    display: flex;
-    justify-items: center; 
-    justify-content: center;
-    gap:10px;
+.img-servicios {
+    grid-area: img-servicios;
+    
 }
 
-.img-servicios2 {
-    grid-area: img-servicios2;
-    display: flex;
-    justify-items: center; 
-    justify-content: center;
-    gap:10px;
-}
+
 .img-serv {
-    display:flex;
-    width: 100%;
+    width: 300px;
     object-fit: cover;
-}
-
-.subtitulo1 {
-   
-    grid-area:subtitulo1;
-    color: #775d49;
-    font-size: 30px;
-    text-align: center;
-}
-.subtitulo2 {
-    grid-area: subtitulo2;
-    color: #775d49;
-    font-size: 30px;
-    text-align: center;
-}
-
-.p-servicios1{
-    grid-area: p-servicios1;
-    font-size: 20px;
-    text-align: center;   
-}
-
-.p-servicios2{
-    grid-area: p-servicios2;
-    font-size: 20px;
-    text-align: center;
-}
-
-
-.btn-descubremas1{
-    grid-area: btn-descubremas1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-   
-}
-
-.btn-descubremas2{
-    grid-area: btn-descubremas2;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
 }
 
 
