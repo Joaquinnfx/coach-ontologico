@@ -1,7 +1,10 @@
+
 body{
     background-color: #eae3d8;
 }
-
+header{
+    background-color: #fdf7ed;
+}
 h1, h2, h3, p {
     color: #775d49
 }
@@ -13,10 +16,12 @@ h3{
     color: #eae3d8;
     font-size: 30px;
 }
-
+img{
+    border-radius: 16px;
+}
 .contenedor {
     max-width: 1300px;
-    margin: auto;
+    margin: 50px;
 }
 
 #inicio {
@@ -113,7 +118,7 @@ h3{
     color: #eae3d8;
     padding: 10px;
     border: none;
-    border-radius: 20px;
+    border-radius: 16px;
     cursor: pointer;
     font-weight: bold;
     font-size: 15px;
@@ -203,6 +208,7 @@ h3{
     background-color: #775d49;
     text-align: center;
     justify-content: center;
+    align-items: center;
     width: 500px;
     height: 350px;
     border-radius: 5px;
@@ -227,43 +233,87 @@ h3{
 
 #servicios {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(4, 200px);
-    grid-area: 
-    "titulo-servicios titulo-servicios titulo-servicios"
-    "card-servicios1 img-servicios card-servicios2"
-    "card-servicios1 img-servicios card-servicios2"
-    "card-servicios1 img-servicios card-servicios2"
+    grid-template-columns: repeat(2, 500px);
+    grid-template-rows: 100px 250px 50px repeat(2, 125px);
+    grid-template-areas: 
+    "titulo-servicios titulo-servicios"
+    "img-servicios1 img-servicios2 "
+    "subtitulo1 subtitulo2 "
+    "p-servicios1 p-servicios2 "
+    "btn-descubremas1 btn-descubremas2"
     ;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 150px;
 }
 
 .titulo-servicios {
     grid-area: titulo-servicios;  
+    text-align: center;
 }
 
-.card-servicios1 {
-    grid-area: card-servicios1;
+.img-servicios1 {
+    grid-area: img-servicios1;
+    display: flex;
+    justify-items: center; 
+    justify-content: center;
+    gap:10px;
 }
 
-.card-servicios2 {
-    grid-area: card-servicios2;
+.img-servicios2 {
+    grid-area: img-servicios2;
+    display: flex;
+    justify-items: center; 
+    justify-content: center;
+    gap:10px;
+}
+.img-serv {
+    display:flex;
+    width: 100%;
+    object-fit: cover;
 }
 
-.subtitulo {
+.subtitulo1 {
+   
+    grid-area:subtitulo1;
+    color: #775d49;
+    font-size: 30px;
+    text-align: center;
+}
+.subtitulo2 {
+    grid-area: subtitulo2;
     color: #775d49;
     font-size: 30px;
     text-align: center;
 }
 
-.img-servicios {
-    grid-area: img-servicios;
-    
+.p-servicios1{
+    grid-area: p-servicios1;
+    font-size: 20px;
+    text-align: center;   
+}
+
+.p-servicios2{
+    grid-area: p-servicios2;
+    font-size: 20px;
+    text-align: center;
 }
 
 
-.img-serv {
-    width: 300px;
-    object-fit: cover;
+.btn-descubremas1{
+    grid-area: btn-descubremas1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+.btn-descubremas2{
+    grid-area: btn-descubremas2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
 }
 
 
