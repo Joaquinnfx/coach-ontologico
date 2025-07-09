@@ -313,7 +313,40 @@ img{
 
 }
 
+.titulo-contacto {
+    grid-area: titulo-contacto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+}
 
+#contacto {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 75px 600px;
+    grid-template-areas:
+    "titulo-contacto titulo-contacto"
+    "form-contacto img-contacto";
+    justify-content: center;
+    gap: 20px;
+}
+
+.form-contacto {
+    grid-area: form-contacto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.img-contacto {
+    grid-area: img-contacto;
+    display: flex;
+    flex-direction: column;
+    object-fit: cover;
+    width: 100%;
+}
 
 
 
