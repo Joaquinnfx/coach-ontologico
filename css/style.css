@@ -5,7 +5,7 @@ body {
   backdrop-filter: blur(5px);
 }
 header {
-  background-color: #fdf7ed;
+  background-color: #eae3d8;
 }
 h1,
 h2,
@@ -125,6 +125,29 @@ img {
     font-size: 15px;
     text-decoration: none;
   }
+
+  .btn-nav {
+    background-color: #eae3d8;
+    color: #775d49;
+    padding: 10px;
+    border: none;
+    border-radius: 16px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 15px;
+    text-decoration: none;
+  }
+
+  .btn-nav:hover {
+    background-color: #775d49;
+    color: #eae3d8;
+    transition: 0.5s;
+  }
+
+  .nav-link:hover {
+    transform: scale(1.2);
+    transition: 0.5s;
+  }
 }
 
 #sobremi {
@@ -232,6 +255,7 @@ img {
     padding: 10px;
     margin: 5px;
   }
+
   .card1:hover {
     transform: scale(1.05);
     transition: 0.5s;
@@ -250,13 +274,24 @@ img {
 
   .frase-acercade2 {
     display: flex;
-    flex-direction: column;
-    color: #775d49;
-    align-content: center;
+    justify-content: center;
+    align-items: top;
+    padding-bottom: 20px;
     font-size: 25px;
-    text-align: center;
-    width: 85%;
+    color: #775d49;
   }
+  p {
+    color: #775d49;
+    justify-content: center;
+    font-size: 20px;
+    text-align: center;
+    width: 100%;
+  }
+}
+
+.acercade2:has(#card1:hover) #card2,
+  .acercade2:has(#card2:hover) #card1 {
+  filter: blur(3px);
 }
 
 #servicios {
@@ -392,5 +427,30 @@ img {
   .contacto {
     padding: 25px;
     width: 100%;
+  }
+  .btn-enviar {
+    background-color: #775d49;
+    color: #eae3d8;
+    padding: 10px;
+    border: none;
+    border-radius: 16px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 15px;
+    text-decoration: none;
+  }
+}
+
+.footer-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #775d49;
+  padding: 20px;
+
+  p {
+    color: #eae3d8;
+    font-size: 15px;
+    margin: 0;
   }
 }
