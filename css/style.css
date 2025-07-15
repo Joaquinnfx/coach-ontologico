@@ -96,6 +96,8 @@ img {
   align-items: center;
   position: relative;
   justify-content: center;
+  background: linear-gradient(180deg, #968364, #775d49);
+
 
   .nav-ul {
     display: flex;
@@ -111,7 +113,7 @@ img {
 
   .nav-link {
     text-decoration: none;
-    color: #775d49;
+    color: #eae3d8;
   }
 
   .btn-primary {
@@ -139,7 +141,7 @@ img {
   }
 
   .btn-nav:hover {
-    background-color: #775d49;
+    background-color: #826650;
     color: #eae3d8;
     transition: 0.5s;
   }
@@ -249,11 +251,14 @@ img {
     text-align: center;
     justify-content: center;
     align-content: center;
-    width: 550px;
+    width: 500px;
     height: 450px;
-    border-radius: 5px;
+    border-radius: 15px;
     padding: 10px;
     margin: 5px;
+    box-shadow: 8px 8px 13px -1px rgba(0, 0, 0, 0.3);
+    -webkit-box-shadow: 8px 8px 13px -1px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 8px 8px 13px -1px rgba(0, 0, 0, 0.3);
   }
 
   .card1:hover {
@@ -445,12 +450,13 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #775d49;
-  padding: 20px;
+  background: linear-gradient(180deg, #775d49, #968364);
+  padding: 30px;
 
   p {
     color: #eae3d8;
     font-size: 15px;
     margin: 0;
+    font-weight: 500;
   }
 }
