@@ -14,6 +14,7 @@ p {
   color: #775d49;
 }
 
+
 h2 {
   font-size: 50px;
 }
@@ -292,6 +293,8 @@ img {
     text-align: center;
     width: 100%;
   }
+
+
 }
 
 .acercade2:has(#card1:hover) #card2,
@@ -460,3 +463,4 @@ img {
     font-weight: 500;
   }
 }
+
