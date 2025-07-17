@@ -17,6 +17,13 @@ h2,
 h3,
 p {
   color: #775d49;
+   font-family: "TikTok Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+  font-variation-settings:
+    "slnt" 0,
+    "wdth" 100;
 }
 
 h2 {
@@ -153,6 +160,35 @@ img {
   .nav-link:hover {
     transform: scale(1.2);
     transition: 0.5s;
+  }
+}
+.navbar-toggler {
+  border: none;
+  background: transparent;
+  margin-right: 20px;
+
+  .toggler-icon {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    background-color: white;
+    transition: all 0.5s ease;
+  }
+}
+
+.collapse.navbar-collapse {
+  @media (max-width: 768px) {
+    position: absolute;
+    top: 60px;
+    right: 10px;
+    width: 240px;
+    background-color: #775d49;
+    padding: 1rem;
+    border-radius: 10px;
+    z-index: 999;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    animation: fadeInMenu 0.3s ease-out forwards;
   }
 }
 
@@ -314,7 +350,7 @@ img {
 #servicios {
   display: grid;
   grid-template-columns: repeat(2, 500px);
-  grid-template-rows: 100px 250px 50px repeat(2, 175px);
+  grid-template-rows: 100px 250px 50px 175px 100px; 
   grid-template-areas:
     "titulo-servicios titulo-servicios"
     "img-servicios1 img-servicios2 "
@@ -476,6 +512,7 @@ img {
 /* === MEDIA QUERIES === */
 
 /* TABLET: entre 577px y 992px */
+
 @media (max-width: 992px) {
   .contenedor {
     padding: 30px 20px;
