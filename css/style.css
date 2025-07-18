@@ -19,7 +19,10 @@ html {
 
 header {
   background-color: #eae3d8;
+  position: sticky;
+  top: 0;
 }
+
 h1,
 h2,
 h3,
@@ -34,16 +37,26 @@ p {
     "wdth" 100;
 }
 
+h1, h2, h3{
+  font-family: "Courgette", cursive;
+  font-weight: 400;
+  font-style: normal;
+
+}
+
 h2 {
   font-size: 50px;
 }
+
 h3 {
   color: #eae3d8;
   font-size: 30px;
 }
+
 img {
   border-radius: 16px;
 }
+
 .contenedor {
   max-width: 1300px;
   margin: 0 auto;
@@ -63,8 +76,8 @@ img {
   background-color: #eae3d8;
   border-radius: 8px;
   margin-bottom: 40px;
-  height: 750px;
-
+  height: 750px; 
+ 
   .logo-inicio {
     grid-area: logo-inicio;
     display: flex;
@@ -96,10 +109,12 @@ img {
     justify-content: right;
     object-fit: cover;
     height: 100%;
+    
   }
   .imagen1 {
     width: 450px;
     height: 815px;
+    
   }
 
   .logo {
@@ -303,6 +318,9 @@ img {
   .img-grupo {
     width: 500px;
     align-content: center;
+     box-shadow: 8px 8px 13px -1px rgba(0, 0, 0, 0.3);
+    -webkit-box-shadow: 8px 8px 13px -1px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 8px 8px 13px -1px rgba(0, 0, 0, 0.3);
   }
 }
 
@@ -405,6 +423,8 @@ img {
     justify-items: center;
     justify-content: center;
     gap: 10px;
+   
+
   }
   .img-servicios2 {
     grid-area: img-servicios2;
@@ -412,11 +432,17 @@ img {
     justify-items: center;
     justify-content: center;
     gap: 10px;
+    
+
   }
   .img-serv {
     display: flex;
     width: 100%;
     object-fit: cover;
+    border-radius: 16px;
+     box-shadow: 8px 8px 13px -1px rgba(0, 0, 0, 0.3);
+    -webkit-box-shadow: 8px 8px 13px -1px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 8px 8px 13px -1px rgba(0, 0, 0, 0.3);
   }
   .subtitulo1 {
     grid-area: subtitulo1;
@@ -499,6 +525,9 @@ img {
     justify-content: center;
     background-color: #fdf7ed;
     border-radius: 8px;
+     box-shadow: 8px 8px 13px -1px rgba(0, 0, 0, 0.3);
+    -webkit-box-shadow: 8px 8px 13px -1px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 8px 8px 13px -1px rgba(0, 0, 0, 0.3);
   }
 
   .img-contacto {
@@ -507,6 +536,9 @@ img {
     flex-direction: column;
     object-fit: cover;
     width: 100%;
+     box-shadow: 8px 8px 13px -1px rgba(0, 0, 0, 0.3);
+    -webkit-box-shadow: 8px 8px 13px -1px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 8px 8px 13px -1px rgba(0, 0, 0, 0.3);
   }
   .contacto {
     padding: 25px;
