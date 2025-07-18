@@ -3,6 +3,10 @@ body {
   background-size: cover;
   background-attachment: fixed;
   backdrop-filter: blur(5px);
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+  max-width: 100%;
 }
 
 html {
@@ -102,7 +106,7 @@ img {
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 576px) {
   .navbar-collapse {
     position: absolute;
     top: 60px;
@@ -656,6 +660,8 @@ img {
   .contenedor {
     padding: 10px;
   }
+
+  
 
   header {
     padding: 10px;
