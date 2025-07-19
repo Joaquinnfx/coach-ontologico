@@ -28,20 +28,19 @@ h2,
 h3,
 p {
   color: #775d49;
-   font-family: "TikTok Sans", sans-serif;
+  font-family: "TikTok Sans", sans-serif;
   font-optical-sizing: auto;
   font-weight: weight;
   font-style: normal;
-  font-variation-settings:
-    "slnt" 0,
-    "wdth" 100;
+  font-variation-settings: "slnt" 0, "wdth" 100;
 }
 
-h1, h2, h3{
+h1,
+h2,
+h3 {
   font-family: "Courgette", cursive;
   font-weight: 400;
   font-style: normal;
-
 }
 
 h2 {
@@ -76,8 +75,8 @@ img {
   background-color: #eae3d8;
   border-radius: 8px;
   margin-bottom: 40px;
-  height: 750px; 
- 
+  height: 750px;
+
   .logo-inicio {
     grid-area: logo-inicio;
     display: flex;
@@ -109,12 +108,10 @@ img {
     justify-content: right;
     object-fit: cover;
     height: 100%;
-    
   }
   .imagen1 {
     width: 450px;
     height: 815px;
-    
   }
 
   .logo {
@@ -137,14 +134,11 @@ img {
     z-index: 999;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
     animation: fadeInMenu 0.3s ease-out forwards;
-    
   }
-
 
   .navbar-nav {
     flex-direction: column;
     align-items: flex-start;
-    
   }
 
   .nav-link {
@@ -173,7 +167,6 @@ img {
     justify-content: end;
   }
 }
-
 
 .nav-bar {
   display: flex;
@@ -235,8 +228,6 @@ img {
     transition: 0.5s;
   }
 }
-
-
 
 #sobremi {
   display: grid;
@@ -318,7 +309,7 @@ img {
   .img-grupo {
     width: 500px;
     align-content: center;
-     box-shadow: 8px 8px 13px -1px rgba(0, 0, 0, 0.3);
+    box-shadow: 8px 8px 13px -1px rgba(0, 0, 0, 0.3);
     -webkit-box-shadow: 8px 8px 13px -1px rgba(0, 0, 0, 0.3);
     -moz-box-shadow: 8px 8px 13px -1px rgba(0, 0, 0, 0.3);
   }
@@ -399,7 +390,7 @@ img {
 #servicios {
   display: grid;
   grid-template-columns: repeat(2, 500px);
-  grid-template-rows: 100px 250px 50px 175px 100px; 
+  grid-template-rows: 100px 250px 50px 175px 100px;
   grid-template-areas:
     "titulo-servicios titulo-servicios"
     "img-servicios1 img-servicios2 "
@@ -423,8 +414,6 @@ img {
     justify-items: center;
     justify-content: center;
     gap: 10px;
-   
-
   }
   .img-servicios2 {
     grid-area: img-servicios2;
@@ -432,15 +421,13 @@ img {
     justify-items: center;
     justify-content: center;
     gap: 10px;
-    
-
   }
   .img-serv {
     display: flex;
     width: 100%;
     object-fit: cover;
     border-radius: 16px;
-     box-shadow: 8px 8px 13px -1px rgba(0, 0, 0, 0.3);
+    box-shadow: 8px 8px 13px -1px rgba(0, 0, 0, 0.3);
     -webkit-box-shadow: 8px 8px 13px -1px rgba(0, 0, 0, 0.3);
     -moz-box-shadow: 8px 8px 13px -1px rgba(0, 0, 0, 0.3);
   }
@@ -473,6 +460,10 @@ img {
     display: flex;
     justify-content: center;
     align-items: center;
+    a {
+      color: #eae3d8;
+      text-decoration: none;
+    }
   }
 
   .btn-descubremas2 {
@@ -480,6 +471,10 @@ img {
     display: flex;
     justify-content: center;
     align-items: center;
+    a {
+      color: #eae3d8;
+      text-decoration: none;
+    }
   }
   .btn-descubremas1,
   .btn-descubremas2 {
@@ -525,7 +520,7 @@ img {
     justify-content: center;
     background-color: #fdf7ed;
     border-radius: 8px;
-     box-shadow: 8px 8px 13px -1px rgba(0, 0, 0, 0.3);
+    box-shadow: 8px 8px 13px -1px rgba(0, 0, 0, 0.3);
     -webkit-box-shadow: 8px 8px 13px -1px rgba(0, 0, 0, 0.3);
     -moz-box-shadow: 8px 8px 13px -1px rgba(0, 0, 0, 0.3);
   }
@@ -536,7 +531,7 @@ img {
     flex-direction: column;
     object-fit: cover;
     width: 100%;
-     box-shadow: 8px 8px 13px -1px rgba(0, 0, 0, 0.3);
+    box-shadow: 8px 8px 13px -1px rgba(0, 0, 0, 0.3);
     -webkit-box-shadow: 8px 8px 13px -1px rgba(0, 0, 0, 0.3);
     -moz-box-shadow: 8px 8px 13px -1px rgba(0, 0, 0, 0.3);
   }
